@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    font-family: "Microsoft JhengHei", sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+}
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+}
+.subtitle {
+    font-size: 1.1rem;
+    color: #a0c4ff;
+    margin-bottom: 30px;
+}
+.star-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 40px 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.star-icon {
+    font-size: 5rem;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    animation: float 3s ease-in-out infinite;
+}
+.star-icon:hover {
+    transform: scale(1.25) rotate(15deg);
+    filter: drop-shadow(0 0 20px #ffd700);
+}
+.star-icon:active {
+    transform: scale(0.9) rotate(-15deg);
+}
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+.star-card h2 {
+    margin-top: 20px;
+    color: #ffe66d;
+}
+.star-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+    margin: 20px 0;
+}
+.interactive-hint {
+    font-size: 0.9rem;
+    color: #ffadad;
+    margin-top: 15px;
+    font-style: italic;
+}
+footer {
+    margin-top: 30px;
+    font-size: 0.85rem;
+    color: #8d99ae;
+}
